@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #d9d7d4;
+}
+
+#calculator {
+    height: 575px;
+    width: 325px;
+    margin: 100px auto;
+    /* border: 3px solid yellow; */
+    border-radius: 50px;
+    background: #000;
+    box-shadow: 4px 5px 2px 0px rgba(0, 0, 0, 0.2)
+}
+
+.rows {
+    width: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "ac plusandminus proc division"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot qually";
+    grid-gap: 10px;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
+    /* border: 1px solid red; */
+    /* padding-top: 20px; */
+    margin-top: 20px;
+}
+
+.result {
+    width: 275px;
+    height: 65px;
+    margin: auto;
+    color: #fff;
+    font-weight: lighter;
+    /* border: 2px solid green; */
+    font-size: 4rem;
+    text-align: right;
+    padding-top: 110px;
+}
+
+.btn {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background: #3d3d3d;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.9rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+.btn:active {
+    filter: brightness(0.9);
+}
+
+.grey {
+    background: #9c9c9c;
+    color: #000;
+}
+
+.orange {
+    background: #fcad00;
+}
+
+.zero {
+    grid-area: zero;
+    width: 80%;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
